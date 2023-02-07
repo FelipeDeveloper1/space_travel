@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/crew/crew.css">
+    <link rel="stylesheet" href="../css/crew/radio.css">
+    <title>Frontend Mentor | Space tourism website</title>
 </head>
+
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Flight Engineer
-  Anousheh Ansari
-
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
+    <header>
+        <div class="content_header">
+            <div class="logo"><img src="../assets/shared/logo.svg" alt="" srcset=""></div>
+            <nav class="nav_items">
+                <ul class="ul_nav">
+                    <li class="items">HOME</li>
+                    <li class="items">DESTINATION</li>
+                    <li class="items">CREW</li>
+                    <li class="items">TECHNOLOGY</li>
+                </ul>
+                <div class="icon_responsive">
+                    <img src="../assets/shared/icon-hamburger.svg" alt="">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main_content">
+            <div class="titulo">
+                <p class="number">0</p>
+                <p>MEET YOUR CREW</p>
+            </div>
+            <div class="description_crew">
+                <div class="description">
+                    <p class="role"></p>
+                    <p class="name"></p>
+                    <div class="biografia">
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ea quam minima vel necessitatibus quaerat, asperiores vero qui consequatur modi velit impedit, cum optio sit autem. Odio laboriosam modi aut?</p>
+                    </div>
+                    <div class="radios">
+                        <input type="radio" name="crew" id="primeiro" class="choose">
+                        <input type="radio" name="crew" id="segundo">
+                        <input type="radio" name="crew" id="terceiro">
+                        <input type="radio" name="crew" id="quarto">
+                    </div>
+                </div>
+                <div class="pessoa">
+                    <img src="" alt="" srcset="">
+                    <p>imagbem aq vai ser bonita demais</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+<script src="../js/Responsive.JS"></script>
+<script src="..//js/crew_js/insertInfo.js"></script>
+
 </html>
