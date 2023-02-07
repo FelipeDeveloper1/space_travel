@@ -1,0 +1,78 @@
+body {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+}
+
+
+/* header */
+
+@media(max-width: 1250px) {
+    body {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+    .content_main {
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+    .explore_click {
+        margin-top: 5vh;
+    }
+}
+
+@media(max-width: 750px) {
+    body {
+        background-image: url(../assets/home/background-home-mobile.jpg);
+    }
+    .space_text>p {
+        text-align: center;
+    }
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content_main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.space_text {
+    justify-content: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.space_text>p:first-child {
+    font-size: clamp(1.25rem, 0.125rem + 10vw, 2rem);
+}
+
+.destaque {
+    font-size: clamp(2rem, 0.125rem + 20vw, 6rem);
+    margin-bottom: 20px;
+}
+
+.space_text>p:nth-child(n+3) {
+    margin-top: 5px;
+    font-size: clamp(1rem, 0.125rem + 3.5vw, 1.2rem);
+}
+
+.explore_click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 35vh;
+    padding: 3vw;
+    border-radius: 100%;
+    font-size: clamp(1.25rem, 0.125rem + 10vw, 3rem);
+}
+
+.explore_click>p {
+    color: black;
+}
