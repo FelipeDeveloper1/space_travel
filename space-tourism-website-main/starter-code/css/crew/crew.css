@@ -4,7 +4,6 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
     height: 100%;
     width: 100vw;
 }
@@ -14,13 +13,13 @@ main {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-top: 10vh;
-    margin-left: 10vw;
 }
 
 .titulo {
     display: flex;
     font-size: clamp(1rem, 0.125rem + 5vw, 2rem);
+    margin-top: 10vh;
+    margin-left: 10vw;
 }
 
 .titulo>p {
@@ -30,8 +29,8 @@ main {
 .description_crew {
     display: flex;
     margin-top: auto;
-    width: 100vw;
-    height: 60%;
+    height: 50vh;
+    margin-left: 10vw;
 }
 
 .description {
@@ -43,5 +42,4 @@ main {
 
 .biografia {
     width: 30vw;
-    background-color: tomato;
 }
