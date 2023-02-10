@@ -1,5 +1,6 @@
 body {
     background-image: url(../../assets/crew/background-crew-desktop.jpg);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 main {
@@ -29,7 +30,6 @@ main {
 .description_crew {
     display: flex;
     margin-top: auto;
-    height: 50vh;
     margin-left: 10vw;
 }
 
@@ -40,6 +40,37 @@ main {
     width: 50%;
 }
 
+.sob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 20vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.role {
+    font-size: clamp(1rem, 2rem + 8vw, 3rem);
+    opacity: 0.7;
+}
+
+.name {
+    font-size: clamp(2rem, 0.125rem + 20vw, 4rem);
+}
+
 .biografia {
-    width: 30vw;
+    width: 25vw;
+    margin-top: 2vh;
+    font-size: clamp(1rem, 0.5rem + 15vw, 1.1rem);
+    opacity: 0.7;
+}
+
+.pessoa {
+    height: 70vh;
+}
+
+.pessoa>img {
+    width: 100%;
+    height: 100%;
 }
