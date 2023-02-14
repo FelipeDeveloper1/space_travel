@@ -12,14 +12,15 @@ main {
 .main_content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    background-color: tomato;
 }
 
 .titulo {
     display: flex;
     font-size: clamp(1rem, 0.2rem + 5vw, 1.5rem);
     margin-left: 10vw;
+    margin-top: 5vh;
 }
 
 .titulo>p {
@@ -30,21 +31,19 @@ main {
     display: flex;
     justify-content: space-around;
     height: 100%;
-    background-color: red;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .sob {
     display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .role {
@@ -64,9 +63,8 @@ main {
 }
 
 .pessoa {
-    /* height: 70vh; */
+    height: 65vh;
     margin-top: auto;
-    background-color: blue;
 }
 
 .pessoa>img {
@@ -78,14 +76,17 @@ main {
     .description_crew {
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
     .description {
-        height: 35vh;
+        display: flex;
         align-items: center;
         width: 100vw;
+        margin-top: 5vh;
     }
     .sob {
         width: 60vw;
+        height: auto;
     }
     .pessoa {
         height: 40vh;
@@ -96,7 +97,14 @@ main {
     .radios {
         display: flex;
         justify-content: center;
+        width: 100%;
+        margin-top: 5vh;
     }
 }
 
-@media(max-width: 750px) {}
+@media(max-width: 750px) {
+    .sob {
+        width: 100vw;
+        height: auto;
+    }
+}
