@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "../../../../../space-tourism"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "space-tourism-website-main"
+    }
+}

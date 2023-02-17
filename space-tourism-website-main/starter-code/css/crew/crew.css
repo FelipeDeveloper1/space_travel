@@ -73,6 +73,9 @@ main {
 }
 
 @media(max-width: 1250px) {
+    body {
+        background-image: url(../../assets/crew/background-crew-tablet.jpg);
+    }
     .description_crew {
         flex-direction: column;
         align-items: center;
@@ -103,6 +106,9 @@ main {
 }
 
 @media(max-width: 750px) {
+    body {
+        background-image: url(../../assets/crew/background-crew-mobile.jpg)
+    }
     .sob {
         width: 100vw;
         height: auto;
