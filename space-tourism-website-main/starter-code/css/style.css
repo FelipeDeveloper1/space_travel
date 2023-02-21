@@ -50,6 +50,14 @@ ul {
     transition: transform 0.3s ease-in;
 }
 
+ul>a {
+    text-decoration: none;
+}
+
+a>li:hover {
+    border-bottom: 1px solid #feffff;
+}
+
 .items {
     margin-right: 6vw;
     cursor: pointer;

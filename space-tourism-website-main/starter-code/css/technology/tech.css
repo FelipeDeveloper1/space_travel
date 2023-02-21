@@ -1,3 +1,19 @@
 body {
     background-image: url(../../assets/technology/background-technology-desktop.jpg);
 }
+
+main {
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+}
+
+.content_main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.titulo {
+    background-color: white;
+}
