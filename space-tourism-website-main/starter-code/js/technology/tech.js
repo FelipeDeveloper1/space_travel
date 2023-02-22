@@ -1,6 +1,7 @@
 const buttons = document.querySelectorAll('.button')
 const image = document.querySelector('.images')
 const id = document.querySelector(".id")
+let PageWidth = window.screen.width
 const getInfo = async() => {
     const infoTech = await fetch('../data.json')
     const TechJson = await infoTech.json()
@@ -11,6 +12,7 @@ const getInfo = async() => {
             insertInfo(index)
             getImage(index)
             id.innerText = `0${index + 1}`
+
         })
     })
     const insertInfo = (index) => {
@@ -19,11 +21,17 @@ const getInfo = async() => {
             document.querySelector(`.${data}`) ? document.querySelector(`.${data}`).innerText = InfoRequest[data] : undefined
         }
     }
+
     const getImage = (index) => {
+        console.log(PageWidth)
         const ImageRequest = technology[index].images
-        image.setAttribute('src', `.${ImageRequest.portrait}`)
+        PageWidth <= 1250 ? image.setAttribute("src", `.${ImageRequest.landscape}`) : image.setAttribute('src', `.${ImageRequest.portrait}`)
 
     }
+    window.addEventListener('resize', () => {
+        PageWidth = window.screen.width
+    })
+
 
     insertInfo(0)
     getImage(0)

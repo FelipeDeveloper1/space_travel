@@ -45,17 +45,27 @@ header {
 }
 
 ul {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     transition: transform 0.3s ease-in;
+    height: 100%;
 }
 
 ul>a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    height: 100%;
 }
 
-a>li:hover {
-    border-bottom: 1px solid #feffff;
+.actived {
+    border-bottom: 3px solid white;
+}
+
+li {
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 .items {
@@ -87,6 +97,9 @@ a>li:hover {
 @media(max-width: 1250px) {
     .content_header {
         height: 100%;
+    }
+    li {
+        height: auto;
     }
 }
 

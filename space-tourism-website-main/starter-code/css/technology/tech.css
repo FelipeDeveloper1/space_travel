@@ -9,9 +9,9 @@ main {
 }
 
 .content_main {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .titulo {
@@ -78,3 +78,42 @@ main {
 .name {
     font-size: clamp(2rem, 1rem + 10vw, 3.5rem);
 }
+
+
+/* responsive */
+
+@media(max-width: 1250px) {
+    .apresentation {
+        flex-direction: column;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .buttons>input {
+        width: 7vw;
+        margin-left: 2vw;
+        margin-top: 0px;
+    }
+    .titulo {
+        display: flex;
+        font-size: clamp(1rem, 0.125rem + 10vw, 1.9rem);
+        margin-top: 5vh;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        line-height: 1.8;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media(max-width: 750px) {}
