@@ -92,6 +92,9 @@ main {
 /* responsive */
 
 @media(max-width: 1250px) {
+    body {
+        background-image: url(../../assets/technology/background-technology-tablet.jpg);
+    }
     .apresentation {
         flex-direction: column;
     }
@@ -133,6 +136,9 @@ main {
 }
 
 @media(max-width: 750px) {
+    body {
+        background-image: url(../../assets/technology/background-technology-mobile.jpg);
+    }
     .buttons>input {
         width: 15vw;
         margin-left: 3vw;
